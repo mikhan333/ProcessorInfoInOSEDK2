@@ -1,0 +1,14 @@
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010006
+  PACKAGE_NAME                   = TestPkg
+  PACKAGE_GUID                   = 5cee2e49-1b61-4759-a909-a4baa1425a42
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+
+[LibraryClasses]
+
+[Protocols]
+
+[Guids]

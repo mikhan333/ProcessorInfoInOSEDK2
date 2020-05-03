@@ -1,0 +1,33 @@
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = App
+  FILE_GUID                      = 37d8cba2-5d53-4ace-a7b2-a4b31fd361c8
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = ShellCEntryLib
+
+[Sources]
+  App.c
+  ProcessorView.h
+  ProcessorView.c
+  LibSmbiosView.h
+  LibSmbiosView.c
+
+[Packages]
+  StdLib/StdLib.dec
+  MdePkg/MdePkg.dec
+  TestPkg/TestPkg.dec
+
+[Protocols]
+
+[Depex]
+
+[Guids]
+  gEfiSmbiosTableGuid
+
+[LibraryClasses]
+  BaseMemoryLib
+  UefiRuntimeServicesTableLib
+  DevShell
+  LibC
+  LibStdio
