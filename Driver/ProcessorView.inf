@@ -1,0 +1,40 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = ProcessorView
+  FILE_GUID                      = 059785ed-f0c7-4ee8-b8b6-2db96c8f558d
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiDriverMain
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC Etc...
+#
+
+[Sources]
+  ProcessorView.c
+  LibSmbiosView.h
+  LibSmbiosView.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  TestPkg/TestPkg.dec
+  
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiLib
+  
+[Guids]
+  gEfiSmbiosTableGuid
+
+[Ppis]
+
+[Protocols]
+  gEfiProcessorViewProtocolGuid
+
+[FeaturePcd]
+
+[Pcd]
+
+[Depex]
+  TRUE

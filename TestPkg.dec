@@ -6,9 +6,12 @@
   PACKAGE_VERSION                = 0.1
 
 [Includes]
+  Include
+  Include/Protocol
 
 [LibraryClasses]
 
 [Protocols]
-
+  gEfiProcessorViewProtocolGuid = {0x2b98da01, 0x4e0f, 0x463b, {0xad, 0xa2, 0xe0, 0xed, 0x12, 0xfe, 0xbf, 0x77}}
+  
 [Guids]

@@ -66,7 +66,8 @@
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
 
 [Components]
-  TestPkg/Application/App/App.inf
+  TestPkg/Driver/ProcessorView.inf
+  TestPkg/Application/App.inf
 
 [BuildOptions]
   INTEL:*_*_*_CC_FLAGS      = /Qfreestanding

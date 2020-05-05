@@ -8,10 +8,6 @@
 
 [Sources]
   App.c
-  ProcessorView.h
-  ProcessorView.c
-  LibSmbiosView.h
-  LibSmbiosView.c
 
 [Packages]
   StdLib/StdLib.dec
@@ -19,11 +15,11 @@
   TestPkg/TestPkg.dec
 
 [Protocols]
+  gEfiProcessorViewProtocolGuid
 
 [Depex]
 
 [Guids]
-  gEfiSmbiosTableGuid
 
 [LibraryClasses]
   BaseMemoryLib
