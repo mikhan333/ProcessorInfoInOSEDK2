@@ -10,11 +10,13 @@ EDK II
 
 - Build:
 
+  - Without useng make
+
   ```bash
   build -p ProcessorInfoInOSEDK2/TestPkg.dsc
   ```
 
-  Or use `make build`
+  - Use `make build`
 
 - Run (uefi shell):
 
@@ -26,3 +28,22 @@ EDK II
   ```
 
   - If you have qemu, you can use `make start`
+
+## Examples
+
+```bash
+$ load ProcessirView.efi
+Image 'FS0:\EFI\ProcessorView.efi' loaded at 778A2000 - Success
+$ App.efi
+##### Get smbios structure with processor data #####
+##### Display processor information #####
+Processor voltage information:
+Current voltage = (9/10)V (hex - 0x89)
+ExternalClock: 100
+MaxSpeed: 2300
+CurrentSpeed: 2300
+##### Display processor voltage #####
+Voltage in hex: 0x89
+##### Save processor information into variable #####
+Voltage after GetVariable in hex: 0x89
+```
