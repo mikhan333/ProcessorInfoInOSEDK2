@@ -151,9 +151,8 @@ EFI_STATUS EFIAPI UefiDriverMain(
     IN EFI_HANDLE ImageHandle,
     IN EFI_SYSTEM_TABLE *SystemTable)
 {
-  Print(L"##### Driver loading start #####\n");
-
   EFI_STATUS Status = EFI_SUCCESS;
+
   Status = gBS->InstallMultipleProtocolInterfaces(
       &ProcessorViewHandle,
       &gEfiProcessorViewProtocolGuid,
@@ -161,6 +160,5 @@ EFI_STATUS EFIAPI UefiDriverMain(
       NULL);
   ASSERT_EFI_ERROR(Status);
 
-  Print(L"##### Driver loading end #####\n");
   return Status;
 }
