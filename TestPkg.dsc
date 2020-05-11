@@ -64,6 +64,7 @@
   ReportStatusCodeLib|MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull.inf 
   DxeServicesTableLib|MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.inf 
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
+  # IpmiLib|MdeModulePkg/Library/DxeIpmiLibIpmiProtocol/DxeIpmiLibIpmiProtocol.inf
 
 [Components]
   TestPkg/Driver/ProcessorView.inf

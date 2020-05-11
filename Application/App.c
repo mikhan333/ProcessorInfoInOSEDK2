@@ -6,6 +6,7 @@
 
 // #include <Library/UefiRuntimeServicesTableLib.h>
 #include <Library/UefiLib.h>
+// #include <Library/IpmiLib.h>
 
 EFI_PROCESSOR_VIEW_PROTOCOL *PROCESSOR_VIEW_PROTOCOL = NULL;
 
@@ -119,6 +120,29 @@ int main(
       gImageHandle,
       NULL);
   ASSERT_EFI_ERROR(Status);
+
+  //
+  // Attempt to get sensors data directly from sensorc using IPMI
+  //
+
+  // UINT8 Data = 0x03;
+  // UINT32 DataSize = sizeof(UINT8);
+
+  // UINT8     *ResponseData = NULL;
+  // UINT32    *ResponseDataSize = NULL;
+  // Status = IpmiSubmitCommand(
+  //   0x04,
+  //   0x2d,
+  //   &Data,
+  //   DataSize,
+  //   ResponseData,
+  //   ResponseDataSize
+  // );
+  // if (EFI_ERROR(Status))
+  // {
+  //   printf("ERROR: IpmiSubmitCommand() : %d\n", Status);
+  //   return Status;
+  // }
 
   exit(EXIT_SUCCESS);
 }

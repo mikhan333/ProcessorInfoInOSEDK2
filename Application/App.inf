@@ -12,6 +12,7 @@
 [Packages]
   StdLib/StdLib.dec
   MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
   TestPkg/TestPkg.dec
 
 [Protocols]
@@ -22,6 +23,7 @@
 [Guids]
 
 [LibraryClasses]
+  # IpmiLib
   BaseMemoryLib
   UefiRuntimeServicesTableLib
   DevShell

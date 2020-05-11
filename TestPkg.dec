@@ -10,6 +10,7 @@
   Include/Protocol
 
 [LibraryClasses]
+  # IpmiLib|MdeModulePkg/Include/Library/IpmiLib.h
 
 [Protocols]
   gEfiProcessorViewProtocolGuid = {0x2b98da01, 0x4e0f, 0x463b, {0xad, 0xa2, 0xe0, 0xed, 0x12, 0xfe, 0xbf, 0x77}}
