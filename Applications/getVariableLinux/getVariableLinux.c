@@ -23,7 +23,6 @@ int main(int argc, char *argv[])
     }
     else
     {
-        name = EFI_PROCESSOR_VIEW_VARIABLE_NAME;
         strcpy(name, (efi_char16_t *) EFI_PROCESSOR_VIEW_VARIABLE_NAME);
         guid = (efi_guid_t) EFI_PROCESSOR_VIEW_PROTOCOL_GUID;
     }
