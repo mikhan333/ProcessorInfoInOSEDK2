@@ -7,7 +7,7 @@
   ENTRY_POINT                    = ShellCEntryLib
 
 [Sources]
-  App.c
+  getVoltageEFI.c
 
 [Packages]
   StdLib/StdLib.dec

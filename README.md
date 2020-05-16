@@ -10,7 +10,7 @@ EDK II
 
 - Build:
 
-  - Without useng make
+  - Without using make
 
   ```bash
   build -p ProcessorInfoInOSEDK2/TestPkg.dsc

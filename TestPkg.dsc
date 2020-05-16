@@ -68,7 +68,7 @@
 
 [Components]
   TestPkg/Driver/ProcessorView.inf
-  TestPkg/Application/App.inf
+  TestPkg/Applications/getVoltageEFI/getVoltageEFI.inf
 
 [BuildOptions]
   INTEL:*_*_*_CC_FLAGS      = /Qfreestanding
